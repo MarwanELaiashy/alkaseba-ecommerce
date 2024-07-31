@@ -12,8 +12,8 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
       mode="payment"
       cartMode="client-only"
       stripe={stripePublicKey}
-      successUrl="http://localhost:3000/stripe/success"
-      cancelUrl="http://localhost:3000/stripe/error"
+      successUrl="https://alkaseba-ecommerce.vercel.app/stripe/success"
+      cancelUrl="https://alkaseba-ecommerce.vercel.app/stripe/error"
       currency="USD"
       billingAddressCollection={false}
       shouldPersist={true} // to keep products in shopping cart in localStorage when reload the page
